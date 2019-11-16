@@ -5,15 +5,33 @@
  */
 package view;
 
-import controller.ArenaController;
+import java.util.Arrays;
+
+import model.*;
 
 /**
  *
- * @author otavi
+ * @author Fernando Koji
  */
 public class main {
-  ArenaController arena = new ArenaController(10, 10, 10);
   public static void main(String[] args) {
+      Arma arma = new Arma();
+      arma.leArquivo();
+      Bomba bomba = new Bomba();
+      bomba.leArquivo();
+      Virus virus = new Virus();
+      virus.leArquivo();
+      System.out.println("\nArmas\n====================");
+      arma.imprimeListaArmas();
+      System.out.println("\nBombas\n====================");
+      bomba.imprimeListaBombas();
+      System.out.println("\nVirus\n====================");
+      virus.imprimeListaVirus();
+
+      
+      Arena tabuleiro = new Arena(2,10,10);
+
+      System.out.println(Arrays.deepToString(tabuleiro.getArena()));
       
   }
 }

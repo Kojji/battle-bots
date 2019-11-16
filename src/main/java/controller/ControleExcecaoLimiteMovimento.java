@@ -7,8 +7,10 @@ package controller;
 
 /**
  *
- * @author otavi
+ * @author Fernando Koji
  */
-public class ItensEspeciaisController {
-    
+public class ControleExcecaoLimiteMovimento {
+    public ControleExcecaoLimiteMovimento() {
+        
+    }
 }
