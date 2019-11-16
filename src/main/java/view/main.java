@@ -16,11 +16,18 @@ import model.*;
 public class main {
   public static void main(String[] args) {
       Arma arma = new Arma();
+      arma.leArquivo();
       Bomba bomba = new Bomba();
+      bomba.leArquivo();
       Virus virus = new Virus();
-      System.out.println("Armas\n====================\n" + arma.leArquivo() + "\n");
-      System.out.println("Bombas\n====================\n" + bomba.leArquivo() + "\n");
-      System.out.println("Virus\n====================\n" + virus.leArquivo());
+      virus.leArquivo();
+      System.out.println("\nArmas\n====================");
+      arma.imprimeListaArmas();
+      System.out.println("\nBombas\n====================");
+      bomba.imprimeListaBombas();
+      System.out.println("\nVirus\n====================");
+      virus.imprimeListaVirus();
+
       
       Arena tabuleiro = new Arena(2,10,10);
 
