@@ -8,7 +8,7 @@ import model.*;
 
 /**
  *
- * @author otavi
+ * @author Fernando Koji
  */
 public class ControleAcao {
     private Arena arena;

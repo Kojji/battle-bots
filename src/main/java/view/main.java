@@ -11,7 +11,7 @@ import model.*;
 
 /**
  *
- * @author otavi
+ * @author Fernando Koji
  */
 public class main {
   public static void main(String[] args) {

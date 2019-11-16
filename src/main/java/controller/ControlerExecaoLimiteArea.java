@@ -7,7 +7,7 @@ package controller;
 
 /**
  *
- * @author otavi
+ * @author Fernando Koji
  */
 public class ControlerExecaoLimiteArea {
     public ControlerExecaoLimiteArea() {

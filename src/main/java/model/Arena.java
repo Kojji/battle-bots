@@ -7,7 +7,7 @@ package model;
 
 /**
  *
- * @author otavi
+ * @author Fernando Koji
  */
 public class Arena {
     private int altura;

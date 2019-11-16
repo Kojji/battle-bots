@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author otavi
+ * @author Fernando Koji
  */
 public class Bomba {
     private ArrayList<ItensEspeciais> listaBombas;
