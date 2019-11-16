@@ -27,7 +27,7 @@ public class Virus {
             while( (linha = reader.readLine()) != null ){
                 System.out.println(linha);
             }
-
+            reader.close();
             // Imprime confirmacao
             return true;
         }

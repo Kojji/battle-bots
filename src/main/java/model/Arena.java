@@ -14,14 +14,35 @@ public class Arena {
     private int largura;
     private int comprimento;
 
+    private int[][] arena;
+
     public Arena(int altura, int largura, int comprimento) {
         this.altura = altura;
         this.largura = largura;
         this.comprimento = comprimento;
+        this.arena = new int[largura][comprimento];
+
+    }
+
+    public boolean initialize() {
+        for(int i = 0; i < this.getLargura(); i++) {
+            for(int j = 0; j < this.getComprimento(); j++) {
+                this.setArenaIndex(i, j, 1);
+            }
+        }
+        return true;
+    }
+
+    public void setArenaIndex(int largura, int comprimento, int value) {
+        this.arena[largura][comprimento] = value;
+    }
+
+    public int[][] getArena() {
+        return this.arena;
     }
 
     public int getAltura() {
-        return altura;
+        return this.altura;
     }
 
     public void setAltura(int altura) {
@@ -29,7 +50,7 @@ public class Arena {
     }
 
     public int getLargura() {
-        return largura;
+        return this.largura;
     }
 
     public void setLargura(int largura) {
@@ -37,7 +58,7 @@ public class Arena {
     }
 
     public int getComprimento() {
-        return comprimento;
+        return this.comprimento;
     }
 
     public void setComprimento(int comprimento) {

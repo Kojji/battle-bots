@@ -5,6 +5,8 @@
  */
 package view;
 
+import java.util.Arrays;
+
 import model.*;
 
 /**
@@ -19,5 +21,10 @@ public class main {
       System.out.println("Armas\n====================\n" + arma.leArquivo() + "\n");
       System.out.println("Bombas\n====================\n" + bomba.leArquivo() + "\n");
       System.out.println("Virus\n====================\n" + virus.leArquivo());
+      
+      Arena tabuleiro = new Arena(2,10,10);
+
+      System.out.println(Arrays.deepToString(tabuleiro.getArena()));
+      
   }
 }
