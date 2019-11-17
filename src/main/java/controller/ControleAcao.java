@@ -20,6 +20,14 @@ public class ControleAcao {
         this.robo = robo;
         this.posicao = posicao;
     }
+
+    public Arena getArena() { return this.arena; }
+    public void setArena(Arena arena) { this.arena = arena; }
+    public Robo getRobo() { return this.robo; }
+    public void setRobo(Robo robo) { this.robo = robo; }
+    public String getPosicao() { return this.posicao; }
+    public void setPosicao(String posicao) { this.posicao = posicao; }
+    
     
     public boolean mover(Robo robo, String posicao) {
         

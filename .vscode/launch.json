@@ -4,7 +4,7 @@
       "type": "java",
       "name": "CodeLens (Launch) - main",
       "request": "launch",
-      "mainClass": "view.main",
+      "mainClass": "view.Game",
       "projectName": "robot_battle"
     }
   ]

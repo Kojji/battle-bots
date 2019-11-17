@@ -13,7 +13,7 @@ import model.*;
  *
  * @author Fernando Koji
  */
-public class main {
+public class Game {
   public static void main(String[] args) {
       Arma arma = new Arma();
       arma.leArquivo();
