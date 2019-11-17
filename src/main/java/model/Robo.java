@@ -11,11 +11,11 @@ package model;
  */
 public class Robo {
     private String nome;
-    private Arma arma;
+    private ItensEspeciais arma;
     private Arena posicao;
     private int vida;
 
-    public Robo(Arma arma, Arena posicao, int vida, String nome) {
+    public Robo(ItensEspeciais arma, Arena posicao, int vida, String nome) {
         this.nome = nome;
         this.arma = arma;
         this.posicao = posicao;
@@ -23,14 +23,18 @@ public class Robo {
     }
 
 
-    public String getNome() { return this.nome; }
+	public String getNome() { return this.nome; }
     public void setNome(String nome) { this.nome = nome; }
-    public Arma getArma() { return this.arma; }
-    public void setArma(Arma arma) { this.arma = arma; }
+
+    public ItensEspeciais getArma() { return this.arma; }
+    public void setArma(ItensEspeciais arma) { this.arma = arma; }
+
     public Arena getPosicao() { return this.posicao; }
     public void setPosicao(Arena posicao) { this.posicao = posicao; }
+
     public int getVida() { return this.vida; }
     public void setVida(int vida) { this.vida = vida; }
+
 
     public int increaseVida(int value) {
         this.setVida(this.getVida()+value);

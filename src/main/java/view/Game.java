@@ -28,8 +28,12 @@ public class Game {
       System.out.println("\nVirus\n====================");
       virus.imprimeListaVirus();
 
-      
       Arena tabuleiro = new Arena(2,10,10);
+      Arena initialPosition = tabuleiro; // criar uma função para gerar coordenada inicial randomica 
+      Robo R1 = new Robo(arma.getListaArmas().get(0), initialPosition, 300, "Robo Teste 1");
+      System.out.println(R1.getNome() + " - criado");
+      Robo R2 = new Robo(arma.getListaArmas().get(0), initialPosition, 300, "Robo Teste 2");
+      System.out.println(R2.getNome() + " - criado");
 
       System.out.println(Arrays.deepToString(tabuleiro.getArena()));
       
